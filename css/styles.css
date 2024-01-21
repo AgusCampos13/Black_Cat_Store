@@ -209,24 +209,27 @@ body{
 }
 
 /*pie-de-pagina*/
-.pie-de-pagina{
-
-  flex-wrap: nowrap;
-  height: 10vh;
+.footer, .medios-de-contacto, .medios-de-pago, .copyrigth{
 
   align-items: center;
   justify-content: center;
+}
 
-  padding: 3vh 0 0 0;
+.footer{
+
+  height: 10vh;
+  flex-wrap: nowrap;
+}
+
+.medios-de-contacto{
+  padding-top: 2vh;
 }
 
 .medios-de-contacto img{
-  margin: 0;
   height: 2vh;
 }
 
 .medios-de-pago img{
-
   height: 4vh;
 }
 
@@ -234,7 +237,7 @@ body{
 
 .copyrigth{
 
-  margin: 0;
+  font-size: 1.5vh;
 }
 
 /*tablet*/
