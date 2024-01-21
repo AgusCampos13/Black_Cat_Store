@@ -3,6 +3,10 @@
   font-weight: 90;
 }
 
+input:focus{
+  outline: none;
+}
+
 a, a:hover, .nav li{
   text-decoration: none;
 }
@@ -87,8 +91,12 @@ body{
 
 header .nav{ /*container*/
 
-  display: none;
-  visibility:hidden;
+  /* display: none;
+  visibility:hidden; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav ul{
@@ -208,6 +216,61 @@ header .nav{ /*container*/
   margin-top: 2rem;
 }
 
+/*pages0*/
+
+/*iniciar-sesion*/
+
+.container-inicio-sesion{
+
+  margin: 10vh 0 10vh 0;
+  padding: 10vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.container-inicio-sesion h3{
+  
+  font-family: 'Assistant', sans-serif;
+  font-size: 2vh;
+}
+
+.container-inicio-sesion input{
+
+  border:none;
+  border-bottom: solid #121212;
+  border-width: 0.1vh;
+
+  width: 32vh;
+
+  margin: 2.5vh;
+}
+
+.submit{
+
+  margin-top: 4vh;
+}
+
+.submit-button{
+
+  margin-top: 2vh;
+
+  width: 12vh;
+  height: 3.5vh;
+
+  background-color: #121212;
+  color: #FFFF;
+
+  border: solid #000;
+  border-width: 0.1vh;
+} 
+
+.submit a{
+  color: #000;
+  text-decoration: underline;
+}
+
+
 /*pie-de-pagina*/
 .footer, .medios-de-contacto, .medios-de-pago, .copyrigth{
 
@@ -246,6 +309,14 @@ header .nav{ /*container*/
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .container-inicio-sesion{
+
+    border: solid #7a7a7a;
+    border-width: 0.1vh;
+    border-radius: 1vh;
+  
   }
 }
 
