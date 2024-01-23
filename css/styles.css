@@ -44,7 +44,7 @@ body{
 
 /*fuentes*/
 
-.encabezado-2 h1, .main h2{
+.encabezado-2 h1, .main h2, .main-pages h2{
 
   font-family: 'Grenze Gotisch', serif;
   font-weight: 200;
@@ -120,19 +120,34 @@ header .nav{ /*container*/
 
 /*main*/
 
-.main{
+.main, .main-pages{
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
+.main-pages{
+
+  background-color: rgb(243, 243, 243);
+}
+
+.main-pages button{
+
+  height: 2.5rem;
+  width: 6rem;
+}
+
+.main-pages .barra-busqueda{
+
+  height: 2.5rem;
+  border-radius: 2px;
+}
+
 /*portada*/
 
-.portada{
+.main-pages .portada, .main .portada{
 
   position: relative;
-
-  background-image: url(../media/img/img-inicio.jpg);
   background-color: rgb(243, 243, 243);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -144,19 +159,34 @@ header .nav{ /*container*/
   align-items: center;
 }
 
-.portada button{
+.main-pages .portada{
+
+  background-image: url(../media/img/img-nosotros.jpg);
+}
+
+.main .portada{
+
+  background-image: url(../media/img/img-inicio.jpg);
+}
+
+.portada button, .main-pages button{
 
   background-color: transparent;
   color: rgb(243, 243, 243);
   
+  cursor: pointer;
+}
+
+.portada button, .main-pages button, .main-pages .barra-busqueda{
+
   border: solid;
   border-color:  rgb(243, 243, 243);
   border-width: 0.15rem;
+}
 
+.portada button{
   height: 3rem;
   width: 10rem;
-
-  cursor: pointer;
 }
 
 .portada button:hover{
@@ -229,7 +259,7 @@ header .nav{ /*container*/
   justify-content: center;
 }
 
-.container-inicio-sesion h3{
+.container-inicio-sesion h3, .main-pages .portada h3{
   
   font-family: 'Assistant', sans-serif;
   font-size: 2vh;
