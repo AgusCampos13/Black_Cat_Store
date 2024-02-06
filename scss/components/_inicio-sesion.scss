@@ -1,0 +1,80 @@
+//Iniciar Sesion/Registro ----------------------------------------------------------
+
+.main-registro, .container-inicio-sesion, .link-submit{
+  @extend %center;
+}
+
+.container-inicio-sesion, .submit{
+  border-width: $border-width;
+}
+
+.container-inicio-sesion{
+
+  margin: 10vh 0 10vh 0;
+  padding: 10vh;
+
+  h3{
+    font-family: $body-font;
+    font-size: $font-size-h3;
+  }
+
+  input{
+
+    border:none;
+    border-bottom: solid  $dark-color;
+    border-width: $border-width;
+  
+    width: 32vh;
+  
+    margin: 2.5vh;
+  }
+}
+
+.link-submit{ //olvidaste tu clave
+
+  margin-top: 4vh;
+
+  a{
+    color: $dark-color;
+    text-decoration: underline;
+  }
+
+  .submit-button{
+
+    margin-top: 2vh;
+  
+    width: 12vh;
+    height: 3.5vh;
+  
+    background-color: $dark-color;
+    color: $light-color2;
+  
+    border: solid $dark-color;
+
+    transition: all .2s;
+
+    &:hover{
+
+      transform: scale(1.1);
+
+    }
+  } 
+}
+
+@media screen and (min-width:768px){
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .super-container-inicio-sesion{
+    display: inline-block;
+  }
+
+  .container-inicio-sesion{
+
+    border: solid $dark-color $border-width;
+    border-radius: 1vh;
+  }
+}

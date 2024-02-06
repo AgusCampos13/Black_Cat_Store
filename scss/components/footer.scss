@@ -1,0 +1,30 @@
+//Footer -----------------------------------------------------------------------
+.footer, .medios-de-contacto, .medios-de-pago, .copyrigth{
+
+  @extend %center;
+}
+
+.footer{
+
+  height: 10vh;
+  flex-wrap: nowrap;
+}
+
+.medios-de-contacto{
+  padding-top: 2vh;
+
+  img{
+    height: 2vh;
+  }
+}
+
+.medios-de-pago img{
+  height: 4vh;
+}
+
+// Copyrigth -----------------------------------------------------------------------
+
+.copyrigth{
+
+  font-size: $font-size-footer;
+}

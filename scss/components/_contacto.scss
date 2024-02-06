@@ -1,0 +1,63 @@
+//Contacto -----------------------------------------------------------------------
+.main-contacto{
+  @extend %flex-column;
+}
+
+.container-contacto{
+  
+  margin-bottom: 10vh;
+  @extend %flex-column;
+
+  h2{
+    font-family: $title-font;
+    margin: 3vh 0 2vh 5vh;
+
+    text-align: start
+  }
+
+  .info{
+    @extend %flex-column;
+    @extend %center;
+    background-color: $dark-color;
+
+    input{
+
+      border:solid $light-color2 $border-width;
+      background-color: $dark-color;
+      color: $light-color2;
+      
+      height: 5vh;
+      min-width: 40vh;
+      margin: 2vh 1vh 1vh 1vh;
+
+      text-align: left;
+
+    }
+
+    .input-comentario{
+      min-height: 10rem;
+      resize: none;
+    }
+  }
+    .submit-button{
+
+      margin-bottom:4vh;
+    
+      width: 12vh;
+      height: 4vh;
+    
+      background-color: $light-color;
+      color: $dark-color;
+    
+      border: solid $light-color;
+  
+      transition: all .2s;
+  
+      &:hover{
+  
+        transform: scale(1.1);
+  
+      }
+    }
+  
+}

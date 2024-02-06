@@ -1,0 +1,14 @@
+//Responsive -----------------------------------------------------------------------
+
+//tablet
+@media screen and (min-width:768px){
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+//pc escritorio
+@media (min-width: 1200px)  {
+}

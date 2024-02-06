@@ -1,0 +1,174 @@
+//main-pages, main
+.main-pages, .main{
+
+  @extend %center;
+
+  .pages-button-1{
+    background-color: transparent;
+    color: $light-color;
+    cursor: pointer;
+
+    border: solid;
+    border-color:  $light-color;
+    border-width: $border-width;
+  }
+
+  .portada{
+
+    position: relative;
+    background-color:$light-color;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    min-height: 70vh;
+  
+    @extend %center;
+
+    button{
+
+      height: 3rem;
+      width: 10rem;
+
+      transition: all .2s;
+
+      &:hover{
+
+        transform: scale(1.1);
+
+        background-color: $light-color;
+        color: $dark-color;
+      
+        border: none;
+      
+      }
+    }
+  }
+
+  .div-titulo{
+    padding-top: 1vh;
+  }
+}
+
+//main-pages
+.main-pages{ 
+
+  background-color:$light-color;
+
+  .portada{ // portada --> nosotros
+    background-image:$portada-2;
+  }
+
+  .div-titulo{
+
+    border-top: solid $light-color 0.75px;
+  }
+
+  .barra-busqueda{
+    border: solid;
+    border-color:  $light-color;
+    border-width: $border-width;
+    border-radius: 2px;
+    
+    height: 2.5rem; 
+  }
+}
+
+//main
+.main{
+
+  .portada{
+
+    background-image: $portada-1;
+  }
+}
+
+//main-texto
+.main-texto{ 
+
+  padding: 8vh 4vh 3vh 4vh;
+  text-align: start;
+
+  h4{
+    font-size: $font-size-h4;
+    font-style: italic;
+  }
+
+  p{
+    margin-bottom: 5vh;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+}
+
+//Productos -----------------------------------------------------------------------
+.sc-productos{ 
+  
+  h2{
+    margin-top: 3rem;
+  }
+
+  button{
+
+    height: 2.5rem;
+    width: 6rem;
+    transition: all .2s;
+
+    &:hover{
+
+      background-color: $light-color;
+      color: $dark-color;
+    
+      border: none;
+    
+    }
+  }
+}
+
+.container-productos{
+
+  flex-wrap: wrap;
+  @extend %center;
+
+  .producto{
+
+    margin: 2vh 1vh 2vh 1vh;
+
+    justify-content: start;
+    align-items: start;
+  
+    p, h3{
+      margin: 0;
+    }
+
+    h3{
+      font-family: $title-font;
+    }
+  }
+}
+
+//Opiniones -----------------------------------------------------------------------
+.container-opiniones{
+
+  background-color: $light-color2;
+  
+  @extend %center;
+
+  margin: 1rem 0 3rem 0;
+
+  h2{
+    margin-top: 2rem;
+  }
+}
+
+.carousel-inner{
+  height: 20vh;
+
+  img {
+    width: 80%;
+    max-height: 40vh;
+  }
+}
